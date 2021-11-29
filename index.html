@@ -632,40 +632,28 @@
                                         If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly.
                                     </p>
                                 </div>
-                                <form class="contactform" method="post" action="">
-                                    <!-- Name Field Starts -->
-                                    <div class="input-field second-font">
-                                        <i class="fa fa-user prefix"></i>
-                                        <input id="name" name="name" type="text" class="validate" autocomplete="off" required>
-                                        <label class="font-weight-400" for="name">Your Name</label>
+                                <div id="frmContact">
+                                    <div id="mail-status"></div>
+                                    <div>
+                                        <label style="padding-top:20px;">Name</label><span id="userName-info" class="info"></span><br/>
+                                        <input type="text" name="userName" id="userName" class="demoInputBox">
                                     </div>
-                                    <!-- Name Field Ends -->
-                                    <!-- Email Field Starts -->
-                                    <div class="input-field second-font">
-                                        <i class="fa fa-envelope prefix"></i>
-                                        <input id="email" type="email" name="email" class="validate" autocomplete="off" required>
-                                        <label for="email">Your Email</label>
+                                    <div>
+                                        <label>Email</label><span id="userEmail-info" class="info"></span><br/>
+                                        <input type="text" name="userEmail" id="userEmail" class="demoInputBox">
                                     </div>
-                                    <!-- Email Field Ends -->
-                                    <!-- Comment Textarea Starts --> 
-                                    <div class="input-field second-font">
-                                        <i class="fa fa-comments prefix"></i>
-                                        <textarea id="comment" name="comment" class="materialize-textarea"
-                                            required></textarea>
-                                        <label for="comment">Your Comment</label>
+                                    <div>
+                                        <label>Subject</label><span id="subject-info" class="info"></span><br/>
+                                        <input type="text" name="subject" id="subject" class="demoInputBox">
                                     </div>
-                                    <!-- Comment Textarea Ends -->
-                                    <!-- Submit Form Button Starts -->
-                                    <div class="col s12 m12 l9 xl8 submit-form">
-                                        <button class="btn font-weight-700" type="submit" name="send">
-                                            Send Message <i class="fa fa-send"></i>
-                                        </button>
+                                    <div>
+                                        <label>Content</label><span id="content-info" class="info"></span><br/>
+                                        <textarea name="content" id="content" class="demoInputBox" cols="60" rows="6"></textarea>
                                     </div>
-                                    <!-- Submit Form Button Ends -->
-                                    <div class="col s12 m12 l8 xl8 form-message">
-                                        <span class="output_message center-align font-weight-700 uppercase"></span>
+                                    <div>
+                                        <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                             <!-- Contact Form Ends -->
                         </div>
