@@ -31,31 +31,26 @@
 		}));
 
         // AJAX CONTACT FORM
-        function submitForm(){
-            // Initiate Variables With Form Content
-            var name = $("#name").val();
-            var email = $("#email").val();
-            var message = $("#comment").val();
-         
+        $(".contactform").on("submit", function() {
+            $(".output_message").text("Loading...");
+
+            var form = $(this);
             $.ajax({
-                type: "POST",
-                url: "php/contact.php",
-                data: "name=" + name + "&email=" + email + "&comment=" + message,
-                success : function(text){
-                    if (text == "success"){
-                        formSuccess();
+                url: form.attr("action"),
+                method: form.attr("method"),
+                data: form.serialize(),
+                success: function(result) {
+                    if (result == "success") {
+                        $(".contactform").find(".output_message").addClass("success");
+                        $(".output_message").text("Message Sent!");
+                    } else {
+                        $(".contactform").find(".output_message").addClass("error");
+                        $(".output_message").text("Error Sending!");
                     }
                 }
             });
-        }
-        function formSuccess(){
-            $( "#msgSubmit" ).removeClass( "hidden" );
-        }
 
-        $("#contactForm").submit(function(event){
-            // cancels the form submission
-            event.preventDefault();
-            submitForm();
+            return false;
         });
 
 		// MATERIAL CAROUSEL
