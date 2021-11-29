@@ -265,6 +265,15 @@ body.blog.dark .widget-tags ul>li a:hover {
   color: #fff;
 }
 
+.my-name {
+  font-family: 'Gotham', sans-serif !important;
+}
+
+.my-name strong {
+  text-transform: capitalize !important;
+  font-weight: 300;
+}
+
 body.dark .bl-main>section.topleft .bl-box .ah-headline span:first-child,
 body.dark .bl-content p,
 body.dark .personal-info ul li,
@@ -1953,6 +1962,12 @@ body.blog .pagination li a i {
   border: 1px solid transparent;
 }
 
+.handy{
+  font-family: 'Molle', cursive !important;
+  text-transform: lowercase !important;
+  font-size: 35px !important;
+}
+
 /* [ RESPONSIVE DESIGN STYLES ] */
 
 
@@ -1977,7 +1992,8 @@ body.blog .pagination li a i {
   }
 
   .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 300;
   }
 }
 
