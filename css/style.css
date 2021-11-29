@@ -215,6 +215,10 @@ body.dark .bl-main>section:nth-child(4).bl-expand .contact .leftside {
   background-size: cover;
 }
 
+body.dark #bl-work-items > div a, body.dark .bl-main > section:nth-child(4).bl-expand .contact .leftside{
+  background: #111 !important;
+}
+
 body.dark .resume-list-item:not(.is-active) .resume-list-item-inner,
 body.dark div.bl-panel-items>div.bl-show-work,
 body.dark div.bl-panel-items>div,
@@ -227,11 +231,20 @@ body.blog.dark,
 body.blog.dark .btn.back {
   background: rgb(118 93 29 / 29%);
   background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur( 5.5px );
   -webkit-backdrop-filter: blur( 5.5px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.resume-card-body-container{
+  background: #111 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  backdrop-filter: blur( 0 ) !important;
+  -webkit-backdrop-filter: blur( 0 ) !important;
+  box-shadow: none !important;
 }
 
 body.dark .bl-main>section.topleft .bl-box .ah-headline.clip .my-name,
@@ -298,7 +311,7 @@ body.dark .divider .outer-line {
 }
 
 body.dark .resume-list-item-title {
-  color: #888;
+  color: #fff;
 }
 
 body.dark #bl-work-items>div a,
