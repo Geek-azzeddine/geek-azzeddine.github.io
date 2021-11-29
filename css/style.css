@@ -298,7 +298,7 @@ body.dark .resume-list-item:not(.is-active):hover {
 }
 
 body.dark .badges h3 i {
-  color: #777;
+  color: #fff;
 }
 
 body.dark .divider .outer-line {
