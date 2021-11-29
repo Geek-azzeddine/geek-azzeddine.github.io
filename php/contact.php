@@ -1,15 +1,32 @@
 <?php
-//get data from form  
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['comment'];
-$to = "azzeddine.lahlil@gmail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@theoctopus.ma" . "\r\n" ;
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["comment"];
+ 
+$EmailTo = "azzeddine.lahlil@gmail.com";
+$Subject = "New Message Received";
+ 
+// prepare email body text
+$Body .= "Name: ";
+$Body .= $name;
+$Body .= "\n";
+ 
+$Body .= "Email: ";
+$Body .= $email;
+$Body .= "\n";
+ 
+$Body .= "Message: ";
+$Body .= $message;
+$Body .= "\n";
+ 
+// send email
+$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+ 
+// redirect to success page
+if ($success){
+   echo "success";
+}else{
+    echo "invalid";
 }
-//redirect
-header("Location:thankyou.html");
+ 
 ?>
