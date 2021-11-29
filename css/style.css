@@ -751,9 +751,9 @@ section.bl-expand .bl-icon-close {
 }
 
 .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0 auto;
   display: block;
 }
@@ -1951,7 +1951,7 @@ body.blog .pagination li a i {
   }
 
   .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
