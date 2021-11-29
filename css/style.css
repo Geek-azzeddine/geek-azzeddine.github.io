@@ -216,7 +216,7 @@ body.dark .bl-main>section:nth-child(4).bl-expand .contact .leftside {
 }
 
 body.dark #bl-work-items > div a, body.dark .bl-main > section:nth-child(4).bl-expand .contact .leftside{
-  background: #111 !important;
+  background: rgb(17 17 17 / 62%) !important;
 }
 
 body.dark .resume-list-item:not(.is-active) .resume-list-item-inner,
@@ -225,7 +225,6 @@ body.dark div.bl-panel-items>div,
 body.dark .bl-main>section:nth-child(4),
 body.dark .bl-main>section:nth-child(2),
 body.dark .bl-main>section:nth-child(3),
-body.dark .resume-card-body,
 body.dark .bl-main>section.bl-expand,
 body.blog.dark,
 body.blog.dark .btn.back {
@@ -238,13 +237,8 @@ body.blog.dark .btn.back {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.resume-card-body-container{
+body.dark .resume-card-body{
   background: #111 !important;
-  border-radius: 0 !important;
-  border: 0 !important;
-  backdrop-filter: blur( 0 ) !important;
-  -webkit-backdrop-filter: blur( 0 ) !important;
-  box-shadow: none !important;
 }
 
 body.dark .bl-main>section.topleft .bl-box .ah-headline.clip .my-name,
