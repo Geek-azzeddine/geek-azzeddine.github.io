@@ -266,12 +266,12 @@ body.blog.dark .widget-tags ul>li a:hover {
 }
 
 .my-name {
-  font-family: 'Gotham', sans-serif !important;
+  text-transform: capitalize !important;
+  font-weight: 300;
 }
 
 .my-name strong {
-  text-transform: capitalize !important;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 body.dark .bl-main>section.topleft .bl-box .ah-headline span:first-child,
@@ -788,7 +788,7 @@ section.bl-expand .bl-icon-close {
 .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
   font-weight: 400;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   margin: 0 auto;
   display: block;
 }
@@ -1962,12 +1962,6 @@ body.blog .pagination li a i {
   border: 1px solid transparent;
 }
 
-.handy{
-  font-family: 'Molle', cursive !important;
-  text-transform: lowercase !important;
-  font-size: 35px !important;
-}
-
 /* [ RESPONSIVE DESIGN STYLES ] */
 
 
@@ -1992,7 +1986,7 @@ body.blog .pagination li a i {
   }
 
   .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
   }
 }
