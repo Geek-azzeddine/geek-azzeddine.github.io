@@ -281,6 +281,7 @@ body.dark .resume-container {
 
 body.dark .resume-list-item {
   background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px;
 }
 
 body.dark .resume-card-header {
