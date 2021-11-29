@@ -195,7 +195,7 @@ body {
 }
 
 .main-picture.me {
-  background-image: url("../images/me.jpg");
+  background-image: url("../images/profile-v2.png");
   padding: 0;
   margin-top: 24px;
   margin-left: 24px;
@@ -210,7 +210,9 @@ body {
 
 body.dark,
 body.dark .bl-main>section:nth-child(4).bl-expand .contact .leftside {
-  background: #111;
+  background: #000;
+  background: url(../images/pattern.png) #000;
+  background-size: cover;
 }
 
 body.dark .resume-list-item:not(.is-active) .resume-list-item-inner,
@@ -223,7 +225,13 @@ body.dark .resume-card-body,
 body.dark .bl-main>section.bl-expand,
 body.blog.dark,
 body.blog.dark .btn.back {
-  background: #222;
+  background: rgb(118 93 29 / 29%);
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 body.dark .bl-main>section.topleft .bl-box .ah-headline.clip .my-name,
