@@ -72,7 +72,7 @@ body {
   background: #efe9e9;
   font-size: 0.9em;
   font-weight: 400;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .second-font {
@@ -257,7 +257,7 @@ body.blog.dark .widget-tags ul>li a:hover {
   color: #fff;
 }
 
-.bordered{
+.bordered {
   border-left: 5px solid #daa520 !important;
   padding-left: 6px !important;
 }
@@ -783,7 +783,7 @@ section.bl-expand .bl-icon-close {
 
 .bl-main>section.topleft .bl-box h3 {
   font-size: 28px;
-  margin: 25px 0 5px;
+  margin: -31px 0 5px !important;
   font-weight: 900;
 }
 
@@ -2035,7 +2035,7 @@ body.blog .pagination li a i {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
   .bl-main>section {
     width: calc(100% - 24px);
@@ -2046,7 +2046,7 @@ body.blog .pagination li a i {
     height: 308px;
   }
 
-  .topleft .glassmorphism{
+  .topleft .glassmorphism {
     border: 0;
   }
 
@@ -2061,7 +2061,7 @@ body.blog .pagination li a i {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-}
+  }
 
   .ah-headline span:first-child {
     display: none !important;
