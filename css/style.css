@@ -195,14 +195,15 @@ body {
 }
 
 .main-picture.me {
-  background-image: url("../images/profile-v2.png");
+  background-image: url(../images/profile-v2.png);
   padding: 0;
-  margin-top: 24px;
-  margin-left: 24px;
-  height: calc(100vh - 48px);
-  background-size: cover;
-  background-position: center center;
-  width: calc(33.3333333333% - 48px);
+  background-size: contain;
+  background-position: center left;
+  width: calc(19.333333% - -248px) !important;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Dark Body
