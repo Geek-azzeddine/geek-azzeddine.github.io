@@ -253,8 +253,11 @@ body.blog.dark .sidebar .widget-title,
 body.dark div.bl-panel-items>div,
 body.blog.dark .widget-tags ul>li a:hover {
   color: #fff;
-  border-left: 5px solid goldenrod;
-  padding-left: 6px;
+}
+
+.bordered{
+  border-left: 5px solid goldenrod !important;
+  padding-left: 6px !important;
 }
 
 .my-name {
