@@ -317,7 +317,15 @@ body.dark .resume-list-item:not(.is-active):hover {
 }
 
 body.dark .badges h3 i {
-  color: #fff;
+  color: #daa520;
+}
+
+body.dark .badges h3 span {
+  color: #fff !important;
+}
+
+body.dark .badges h6{
+  color: #daa520 !important;
 }
 
 body.dark .divider .outer-line {
