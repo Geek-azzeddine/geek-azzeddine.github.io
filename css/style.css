@@ -449,10 +449,19 @@ body.dark .responsive-video {
 
 .bl-main>section:not(.bl-expand):hover .page-title h2 span:first-child {
   transform: translate3d(0, -105%, 0);
+  font-weight: 300 !important;
+}
+
+.bl-main>section:not(.bl-expand):hover .page-title h2 span:nth-child(2) {
+  font-weight: 800 !important;
 }
 
 .bl-main>section:not(.bl-expand):hover .page-title h2 span:nth-child(2) {
   transform: translate3d(0, 105%, 0);
+}
+
+.page-title h2 span:first-child {
+  font-weight: 300 !important;
 }
 
 .page-title h2 {
@@ -1973,7 +1982,7 @@ body.blog .pagination li a i {
   }
 
   .bl-main>section.topleft .bl-box .ah-headline span:first-child {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .bl-main>section.topleft .bl-box .ah-headline.clip .my-name {
