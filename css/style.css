@@ -112,6 +112,16 @@ body {
   color: #fff;
   font-weight: 400;
 }
+
+.tel{
+  color: #fff;
+  font-weight: 400;
+}
+
+.email{
+  color: #fff;
+  font-weight: 400;
+}
  
 .glassmorphism {
   background: rgba(255, 255, 255, 0.35);
