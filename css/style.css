@@ -2051,13 +2051,17 @@ body.blog .pagination li a i {
   }
 
   .bl-main>section.topleft .bl-box h3 {
-      padding: 143px !important;
-      border-radius: 10px;
-      background-image: url(../images/profile.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-  }
+    width: 100% !important;
+    border-radius: 10px;
+    background-image: url(../images/profile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 31vh;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 
   .ah-headline span:first-child {
     display: none !important;
