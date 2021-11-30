@@ -768,7 +768,7 @@ section.bl-expand .bl-icon-close {
 }
 
 .bl-main>section.topleft.me {
-  background-image: url('../images/me.jpg');
+  background-image: url('../images/profile.png');
 }
 
 .bl-main>section.topleft:before {
@@ -2394,7 +2394,149 @@ body.blog .pagination li a i {
 ::-webkit-scrollbar-thumb {
   background-color: #b8900a;
   /* border-radius: 3px; */
-}::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0px 0px 6px rgb(0 0 0 / 30%);
+  background: #404040;
+} 
+
+  #bl-work-items {
+    margin-top: -22px;
+    margin-bottom: 30px;
+  }
+
+  body.blog article h4 {
+    font-size: 20px;
+  }
+
+  .widget {
+    margin-bottom: 15px;
+  }
+
+  .btn.back {
+    border-left: 0;
+  }
+
+  body.blog .btn.back {
+    width: 100%;
+    border-left: 0;
+    margin-bottom: -6px;
+  }
+
+  body.blog article {
+    margin-bottom: 45px;
+  }
+
+  .comments-form button {
+    margin-bottom: 50px;
+  }
+
+  .comments-reply {
+    margin-left: 70px;
+  }
+
+  .comments-list .comment-date {
+    display: none;
+  }
+
+  .comments-form form .input-field label {
+    width: 85% !important;
+  }
+
+
+@media (max-width: 480px) {
+  .bl-main {
+    width: calc(100% - 15px);
+    left: 15px !important;
+  }
+
+  .bl-main>section {
+    width: calc(100% - 15px);
+  }
+
+  .bl-main>section:nth-child(4):not(.bl-expand) {
+    top: calc(83% - 15px);
+  }
+
+  .bl-main>section:nth-child(3):not(.bl-expand) {
+    top: calc(66% - 30px);
+  }
+
+  .bl-main>section:nth-child(2):not(.bl-expand) {
+    top: calc(49% - 45px);
+  }
+
+  .bl-main>section:nth-child(2).bl-expand,
+  .bl-main>section:nth-child(3).bl-expand,
+  .bl-main>section:nth-child(4).bl-expand {
+    top: 15px;
+    height: calc(100% - 30px);
+  }
+
+  .bl-main>section.bl-expand {
+    width: calc(100% - 15px);
+  }
+
+  .section-padding {
+    padding: 0 15px !important;
+  }
+
+  .section-padding.section-padding-right-none {
+    padding-right: 15px !important;
+  }
+
+  #bl-work-items {
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: -15px;
+  }
+
+  #bl-work-items>div {
+    padding: 15px 15px 0;
+  }
+
+  div.bl-panel-items>div>div.row {
+    padding: 15px 0 67px;
+  }
+
+  div.bl-panel-items,
+  div.bl-panel-items>div {
+    height: calc(100% - 15px);
+  }
+
+  div.bl-panel-items>div {
+    top: -15px;
+    width: 100%;
+  }
+
+  .page-title h2 {
+    font-size: 24px;
+  }
+
+  .bl-main>section.bl-expand .page-title h2 {
+    font-size: 35px;
+  }
+
+  .resume-card-body-container {
+    padding: 15px;
+  }
+
+}
+
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+::-webkit-scrollbar-button {
+  background: #d9d9d9;
+  /* border-radius: 45px; */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b8900a;
+  /* border-radius: 3px; */
+}
+::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0px 0px 6px rgb(0 0 0 / 30%);
   background: #404040;
 }
