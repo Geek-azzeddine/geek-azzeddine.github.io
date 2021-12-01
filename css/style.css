@@ -2013,8 +2013,8 @@ body.blog .pagination li a i {
 
 @media (max-width: 992px) {
   .bl-main {
-    width: calc(100% - 24px);
-    left: 24px !important;
+    width: calc(50% - 24px);
+    /* left: 24px !important;*/
   }
 
   .bl-main>section:nth-child(4).bl-expand .contact .rightside .submit-form {
@@ -2602,6 +2602,9 @@ body.blog article {
   }
 
 }
+
+@media (min-width:500px){/*Class name*/{/*properties*/}}
+@media (max-width:499px){/*Class name*/{/*properties*/}}
 
 
 ::-webkit-scrollbar {
