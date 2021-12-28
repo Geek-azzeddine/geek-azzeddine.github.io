@@ -2013,8 +2013,16 @@ body.blog .pagination li a i {
 
 @media (max-width: 992px) {
   .bl-main {
-    width: calc(50% - 24px);
-    /* left: 24px !important;*/
+    /* width: calc(50% - 24px); */
+    left: 18.4% !important;
+  }
+
+  .bl-main>section.topleft .bl-box .ah-headline.clip .ah-words-wrapper{
+    font-size: 18px !important;
+  }
+
+  .bl-main>section.topleft .bl-box .ah-headline.clip .my-name{
+    font-size: 28px !important;
   }
 
   .bl-main>section:nth-child(4).bl-expand .contact .rightside .submit-form {
@@ -2200,7 +2208,7 @@ body.blog .pagination li a i {
     font-size: 28px;
     margin: -37px 0 5px !important;
     font-weight: 900;
-    height: 25vh;
+    /* height: 25vh; */
 }
 
   .bl-main>section:nth-child(4).bl-expand .contact .rightside {
@@ -2603,13 +2611,20 @@ body.blog article {
 
 }
 
+@media (orientation: landscape) {
+  .topleft{
+    display: none !important;
+  }
+  
+}
+
 @media (min-width:500px){/*Class name*/{/*properties*/}}
 @media (max-width:499px){/*Class name*/{/*properties*/}}
 
 
 ::-webkit-scrollbar {
   width: 0.5em;
-  height: 0.5em;
+  height: 0.5em; 
 }
 
 ::-webkit-scrollbar-button {
