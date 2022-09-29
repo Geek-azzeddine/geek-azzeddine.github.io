@@ -488,7 +488,7 @@ header .navbar-brand b {
   bottom: 0;
   overflow: hidden;
 }
-.left-side .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+.list-group .list-group-item .bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   background: rgba(177, 136, 40, 0.141);
   padding: 8px;
   border-radius: 50%;
