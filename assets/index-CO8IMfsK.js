@@ -17012,7 +17012,6 @@ function xw() {
       { href: "#decisions", label: "DÉCISIONS" },
       { href: "#etudes-de-cas", label: "ÉTUDES DE CAS" },
       { href: "#parcours", label: "PARCOURS" },
-      { href: "#contact", label: "CONTACT" },
     ];
   return y.jsxs("header", {
     className: `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${s ? "glass py-3" : "py-5"
@@ -17056,22 +17055,11 @@ function xw() {
           y.jsxs("div", {
             className: "flex items-center gap-3",
             children: [
-              y.jsxs("button", {
-                onClick: d,
-                className:
-                  "hidden sm:flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-sm hover:bg-gold-500/20 transition-all duration-200",
-                children: [
-                  u
-                    ? y.jsx(Aa, { size: 14 })
-                    : y.jsx(Da, { size: 14 }),
-                  u ? "Copié !" : "Copier l'email",
-                ],
-              }),
               y.jsx("a", {
                 href: "#contact",
                 className:
                   "hidden sm:block px-4 py-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 font-semibold text-sm hover:shadow-lg hover:shadow-gold-500/25 transition-all duration-200",
-                children: "Me contacter",
+                children: "Let's Talk",
               }),
               y.jsx("button", {
                 onClick: () => i(!n),
@@ -18414,7 +18402,7 @@ function Ew() {
               y.jsx("span", {
                 className: "text-sm text-gray-400",
                 children:
-                  "Azzeddine LAHLIL — Chef de Projet Web",
+                  "Azzeddine LAHLIL — Digital Transformation Advisor",
               }),
             ],
           }),
