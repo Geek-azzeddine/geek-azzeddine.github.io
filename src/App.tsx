@@ -432,7 +432,7 @@ function HeroSection() {
             </h1>
 
             <p className="text-lg text-gray-400 mb-8 max-w-xl leading-relaxed">
-              Double expertise <strong className="text-white">pilotage de projets</strong> et <strong className="text-white">stack technique web</strong> (HTML, CSS, JS, PHP, WordPress/WooCommerce). 
+              Double expertise <strong className="text-white">pilotage de projets</strong> et <strong className="text-white">stack technique web</strong> (HTML, CSS, JS, PHP, WordPress/WooCommerce).
               Je transforme les besoins métier en solutions digitales livrées dans les délais, avec qualité et transparence.
             </p>
 
@@ -471,9 +471,9 @@ function HeroSection() {
           >
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-2 border-gold-500/30 gold-glow">
-                <img 
-                  src={PROFILE_IMG} 
-                  alt="Azzeddine LAHLIL" 
+                <img
+                  src={PROFILE_IMG}
+                  alt="Azzeddine LAHLIL"
                   className="w-full h-full object-cover"
                   onError={(e) => { (e.target as HTMLImageElement).src = "https://image.qwenlm.ai/generated-images/820dbac3-fa5d-4165-84e7-b70bab2865c1/_result.png"; }}
                 />
@@ -538,11 +538,10 @@ function RoadmapSection() {
               <button
                 key={step.id}
                 onClick={() => setActiveStep(index)}
-                className={`p-4 rounded-xl text-left transition-all duration-300 ${
-                  activeStep === index
+                className={`p-4 rounded-xl text-left transition-all duration-300 ${activeStep === index
                     ? "bg-gradient-to-br from-gold-500/20 to-gold-600/10 border border-gold-500/40 gold-glow"
                     : "bg-dark-700/50 border border-dark-600/50 hover:border-gold-500/20"
-                }`}
+                  }`}
               >
                 <div className="flex items-center gap-3 mb-2">
                   <span className={`text-xs font-bold ${activeStep === index ? "text-gold-400" : "text-gray-500"}`}>
@@ -652,11 +651,10 @@ function PlaybookSection() {
               <button
                 key={scenario.id}
                 onClick={() => setActiveScenario(index)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeScenario === index
+                className={`flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 ${activeScenario === index
                     ? "bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 shadow-lg shadow-gold-500/25"
                     : "bg-dark-700/80 border border-dark-600 text-gray-400 hover:border-gold-500/30 hover:text-white"
-                }`}
+                  }`}
               >
                 <Icon size={16} />
                 {scenario.title}
@@ -743,11 +741,10 @@ function CaseStudiesSection() {
             <button
               key={filter.id}
               onClick={() => setActiveFilter(filter.id)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === filter.id
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeFilter === filter.id
                   ? "bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900"
                   : "bg-dark-700/80 border border-dark-600 text-gray-400 hover:border-gold-500/30 hover:text-white"
-              }`}
+                }`}
             >
               {filter.label}
             </button>
