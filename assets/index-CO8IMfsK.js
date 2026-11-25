@@ -17012,6 +17012,7 @@ function xw() {
       { href: "#decisions", label: "DÉCISIONS" },
       { href: "#etudes-de-cas", label: "ÉTUDES DE CAS" },
       { href: "#parcours", label: "PARCOURS" },
+      { href: "#contact", label: "CONTACT" },
     ];
   return y.jsxs("header", {
     className: `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${s ? "glass py-3" : "py-5"
