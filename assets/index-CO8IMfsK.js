@@ -17028,7 +17028,16 @@ function xw() {
               y.jsx("div", {
                 className:
                   "w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-dark-900 font-bold text-sm",
-                children: "AL",
+                children: y.jsx("img", {
+                      src: gw,
+                      alt: "Azzeddine LAHLIL",
+                      className:
+                        "w-full h-full object-cover",
+                      onError: (n) => {
+                        n.target.src =
+                          "/img/pic-profile.png";
+                      },
+                    }),
               }),
               y.jsx("span", {
                 className:
