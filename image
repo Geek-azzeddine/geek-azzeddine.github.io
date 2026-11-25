@@ -129,7 +129,7 @@
                                 <div class="hidden lg:flex justify-center" style="opacity: 1; transform: none">
                                     <div class="relative">
                                         <div class="w-80 h-80 rounded-full overflow-hidden border-2 border-gold-500/30 gold-glow">
-                                            <img src="https://image.qwenlm.ai/generated-images/820dbac3-fa5d-4165-84e7-b70bab2865c1/_result.png" alt="Azzeddine LAHLIL" class="w-full h-full object-cover">
+                                            <img src="img/pic-profile.png" alt="Azzeddine LAHLIL" class="w-full h-full object-cover">
                                         </div>
                                         <div class="absolute -top-4 -right-8 glass rounded-xl p-3 flex items-center gap-2" style="
                                                 transform: translateY(
@@ -175,7 +175,7 @@
                                 </h2>
                                 <p class="text-gray-400 max-w-2xl mx-auto">
                                     Chaque projet suit une méthodologie éprouvée
-                                    en 4 étapes, garantissant alignement,
+                                    en 4 étapes, garantissant l’alignement,
                                     qualité et livraison dans les délais.
                                 </p>
                             </div>
