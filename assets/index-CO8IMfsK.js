@@ -17182,11 +17182,11 @@ function ww() {
                       children:
                         "Pilotage, Relation Client",
                     }),
-                    y.jsx("br", {}),
+                    y.jsx(),
                     y.jsx("span", {
                       className: "text-white",
                       children:
-                        "& Résolution de Problèmes",
+                        " & Résolution de Problèmes",
                     }),
                   ],
                 }),
@@ -17202,7 +17202,7 @@ function ww() {
                     " et ",
                     y.jsx("strong", {
                       className: "text-white",
-                      children: "stack technique web",
+                      children: "vision d'un artistestack technique web",
                     }),
                     " (HTML, CSS, JS, PHP, WordPress/WooCommerce). Je transforme les besoins métier en solutions digitales livrées dans les délais, avec qualité et transparence.",
                   ],
