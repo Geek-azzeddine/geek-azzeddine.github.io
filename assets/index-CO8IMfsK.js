@@ -10262,14 +10262,14 @@ function W0({
     });
   }
   h.displayName = `motion.${typeof u == "string"
-      ? u
-      : `create(${(d =
-        (f = u.displayName) !== null && f !== void 0
-          ? f
-          : u.name) !== null && d !== void 0
-        ? d
-        : ""
-      })`
+    ? u
+    : `create(${(d =
+      (f = u.displayName) !== null && f !== void 0
+        ? f
+        : u.name) !== null && d !== void 0
+      ? d
+      : ""
+    })`
     }`;
   const m = O.forwardRef(h);
   return (m[F0] = u), m;
@@ -16949,67 +16949,46 @@ const G1 = (n, i) =>
   },
   vw = [
     {
-      period: "2023 — Présent",
-      role: "Digital Transformation Manager",
-      company: "Massor Maroc SARL & Pool Bath & Spa",
+      period: "AVRI. 2024 – 2026",
+      role: "WEB CONSULTANT | PROBLEM SOLVING SPECIALIST",
+      company: "Urban Fusion Agency — Marrakech (Remote)",
       description:
-        "Évolution du rôle de Responsable Transformation Digitale vers Head of E-commerce. Évaluation et personnalisation ERPNext, structuration des processus, pilotage digital et coordination inter-équipes.",
+        "Gestion, maintenance et optimisation de sites WordPress pour des clients variés. Administration serveur : hébergement, déploiements, sauvegardes et résolution d'incidents. Mise en place de bonnes pratiques sécurité, performance et disponibilité. Collaboration avec designers, équipes marketing et clients pour des livrables alignés aux objectifs métier.",
     },
     {
-      period: "2022 — 2023",
-      role: "Web Consultant | Problem Solving Specialist",
-      company: "Urban Fusion Agency",
+      period: "JAN. 2025 – OCT. 2025",
+      role: "RESPONSABLE DE LA TRANSFORMATION DIGITALE",
+      company: "Massor Maroc SARL — Casablanca",
       description:
-        "Gestion et optimisation WordPress, administration serveur, hébergement, déploiements, sauvegardes, sécurité, performance et collaboration client/équipe.",
+        "Pilotage de la modernisation des processus internes et conduite du changement organisationnel. Déploiement d'outils digitaux pour améliorer l'efficacité opérationnelle et l'expérience client. Animation de synergies interdépartementales et alignement des stratégies digitales sur les objectifs de l'entreprise. Mise en place de tableaux de bord analytiques pour le suivi de la performance.",
     },
     {
-      period: "2021 — 2022",
-      role: "Web Project Manager",
-      company: "Twily LLC",
+      period: "SEP. 2024 – JAN. 2025",
+      role: "CHEF DE PROJET WEB",
+      company: "Twily LLC — Marrakech",
       description:
-        "Planification, exécution et livraison de projets web. Coordination développeurs/designers/clients, suivi des plannings, audits de performance et résolution de problèmes techniques.",
+        "Planification, exécution et livraison de projets web en coordination avec développeurs, designers et clients. Suivi des plannings, gestion des ressources et résolution des problèmes techniques. Audits réguliers de performance pour améliorer l'UX et l'engagement utilisateur. Point de contact principal pour les clients : traduction des besoins métier en solutions digitales.",
     },
     {
-      period: "2020 — 2021",
-      role: "Team Builder | IT Consulting | WordPress Specialist",
-      company: "INPRIVATE.MA",
+      period: "AOÛ. – DÉC. 2023",
+      role: "CONSULTANT IT & SPÉCIALISTE WORDPRESS",
+      company: "INPRIVATE.MA — Marrakech",
       description:
-        "Constitution et encadrement d'équipes pluridisciplinaires, conseil IT et gestion multi-projets WordPress.",
+        "Constitution et encadrement d'équipes pluridisciplinaires (dev, design, contenu). Conseil IT stratégique et développement de solutions WordPress sur-mesure. Gestion multi-projets avec respect des délais, du budget et des exigences qualité.",
     },
     {
-      period: "2019 — 2020",
-      role: "WordPress Specialist & Full-Stack Designer",
-      company: "CloudLink",
+      period: "JAN. – MAI 2022",
+      role: "LEAD DÉVELOPPEUR WORDPRESS & MENTOR",
+      company: "QALQUL — Casablanca",
       description:
-        "Développement WordPress sur-mesure, design full-stack et intégration avancée.",
+        "Direction technique de projets WordPress complexes pour une clientèle variée. Formation et accompagnement de stagiaires aux bonnes pratiques du développement web. Amélioration des workflows de développement pour un meilleur rendement d'équipe.",
     },
     {
-      period: "2018 — 2019",
-      role: "Lead WordPress Developer & Internship Mentor",
-      company: "QALQUL",
+      period: "SEP. 2018 – NOV. 2020",
+      role: "DESIGNER FULL-STACK & DÉVELOPPEUR FRONT-END",
+      company: "Lysah Export — Marrakech",
       description:
-        "Développement WordPress avancé, encadrement de stagiaires et mentoring technique.",
-    },
-    {
-      period: "2017 — 2018",
-      role: "Team Leader & WordPress Developer",
-      company: "Cloudme BI",
-      description:
-        "Leadership technique d'équipe de développement et projets WordPress complexes.",
-    },
-    {
-      period: "2015 — 2017",
-      role: "Full-Stack Designer & Front-End Developer",
-      company: "Lysah Export",
-      description:
-        "Design UI/UX, intégration front-end et développement web responsive.",
-    },
-    {
-      period: "2014 — 2015",
-      role: "Full-Stack Web Developer",
-      company: "USCODEC TELECOM",
-      description:
-        "Développement web full-stack, collecte de spécifications et maintenance d'applications.",
+        "Conception UI/UX (wireframes, maquettes, intégration) pour des projets web variés. Développement d'interfaces responsives et optimisation des performances front-end.",
     },
   ];
 function xw() {
@@ -17429,8 +17408,8 @@ function Sw() {
               {
                 onClick: () => i(l),
                 className: `p-4 rounded-xl text-left transition-all duration-300 ${n === l
-                    ? "bg-gradient-to-br from-gold-500/20 to-gold-600/10 border border-gold-500/40 gold-glow"
-                    : "bg-dark-700/50 border border-dark-600/50 hover:border-gold-500/20"
+                  ? "bg-gradient-to-br from-gold-500/20 to-gold-600/10 border border-gold-500/40 gold-glow"
+                  : "bg-dark-700/50 border border-dark-600/50 hover:border-gold-500/20"
                   }`,
                 children: [
                   y.jsxs("div", {
@@ -17439,8 +17418,8 @@ function Sw() {
                     children: [
                       y.jsx("span", {
                         className: `text-xs font-bold ${n === l
-                            ? "text-gold-400"
-                            : "text-gray-500"
+                          ? "text-gold-400"
+                          : "text-gray-500"
                           }`,
                         children: s.number,
                       }),
@@ -17455,8 +17434,8 @@ function Sw() {
                   }),
                   y.jsx("h3", {
                     className: `text-sm font-semibold ${n === l
-                        ? "text-white"
-                        : "text-gray-400"
+                      ? "text-white"
+                      : "text-gray-400"
                       }`,
                     children: s.title,
                   }),
@@ -17681,8 +17660,8 @@ function kw() {
               {
                 onClick: () => i(l),
                 className: `flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 ${n === l
-                    ? "bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 shadow-lg shadow-gold-500/25"
-                    : "bg-dark-700/80 border border-dark-600 text-gray-400 hover:border-gold-500/30 hover:text-white"
+                  ? "bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 shadow-lg shadow-gold-500/25"
+                  : "bg-dark-700/80 border border-dark-600 text-gray-400 hover:border-gold-500/30 hover:text-white"
                   }`,
                 children: [y.jsx(u, { size: 16 }), s.title],
               },
@@ -17815,8 +17794,8 @@ function Pw() {
               {
                 onClick: () => i(u.id),
                 className: `px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${n === u.id
-                    ? "bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900"
-                    : "bg-dark-700/80 border border-dark-600 text-gray-400 hover:border-gold-500/30 hover:text-white"
+                  ? "bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900"
+                  : "bg-dark-700/80 border border-dark-600 text-gray-400 hover:border-gold-500/30 hover:text-white"
                   }`,
                 children: u.label,
               },
@@ -18096,14 +18075,14 @@ function Cw() {
                         viewport: { once: !0 },
                         transition: { delay: i * 0.05 },
                         className: `relative flex flex-col md:flex-row gap-4 md:gap-8 ${i % 2 === 0
-                            ? "md:flex-row"
-                            : "md:flex-row-reverse"
+                          ? "md:flex-row"
+                          : "md:flex-row-reverse"
                           }`,
                         children: [
                           y.jsx("div", {
                             className: `flex-1 ${i % 2 === 0
-                                ? "md:text-right"
-                                : "md:text-left"
+                              ? "md:text-right"
+                              : "md:text-left"
                               }`,
                             children: y.jsxs(
                               "div",
