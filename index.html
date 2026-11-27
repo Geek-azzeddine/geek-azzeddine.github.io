@@ -10,6 +10,307 @@
       html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
       body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #f0f0f0; }
     </style>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  UTILITAIRE : Animation fluide (fade + slide)        ║
+    // ╚══════════════════════════════════════════════════════╝
+    function animateTransition(element, direction = 'in') {
+        if (direction === 'out') {
+            element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+                element.style.display = 'none';
+            }, 300);
+        } else {
+            element.style.display = '';
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            requestAnimationFrame(() => {
+                element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            });
+        }
+    }
+
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  1. ONGLETS ROADMAP (4 étapes)                       ║
+    // ╚══════════════════════════════════════════════════════╝
+    const roadmapSection = document.querySelector('#roadmap');
+    if (roadmapSection) {
+        const roadmapButtons = roadmapSection.querySelectorAll('.grid.grid-cols-2.lg\\:grid-cols-4 button, .grid.grid-cols-2.lg\\:grid-cols-4 > button');
+        const roadmapContent = roadmapSection.querySelector('.glass.rounded-2xl.p-6');
+        
+        // Données de la roadmap (à adapter selon votre contenu réel)
+        const roadmapData = roadmapButtons.length > 0 ? Array.from(roadmapButtons).map((btn, idx) => ({
+            index: idx,
+            button: btn
+        })) : [];
+
+        let currentRoadmapIndex = 0;
+        
+        roadmapButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (index === currentRoadmapIndex) return;
+                
+                // Mise à jour visuelle des boutons
+                roadmapButtons.forEach(b => {
+                    b.classList.remove('bg-gradient-to-br', 'from-gold-500/20', 'to-gold-600/10', 'border-gold-500/40', 'gold-glow');
+                    b.classList.add('bg-dark-700/50', 'border-dark-600/50');
+                    const numSpan = b.querySelector('span.text-xs');
+                    const icon = b.querySelector('svg');
+                    const title = b.querySelector('h3');
+                    if (numSpan) { numSpan.classList.remove('text-gold-400'); numSpan.classList.add('text-gray-500'); }
+                    if (icon) { icon.classList.remove('text-gold-400'); icon.classList.add('text-gray-500'); }
+                    if (title) { title.classList.remove('text-white'); title.classList.add('text-gray-400'); }
+                });
+                
+                this.classList.remove('bg-dark-700/50', 'border-dark-600/50');
+                this.classList.add('bg-gradient-to-br', 'from-gold-500/20', 'to-gold-600/10', 'border-gold-500/40', 'gold-glow');
+                const numSpan = this.querySelector('span.text-xs');
+                const icon = this.querySelector('svg');
+                const title = this.querySelector('h3');
+                if (numSpan) { numSpan.classList.remove('text-gray-500'); numSpan.classList.add('text-gold-400'); }
+                if (icon) { icon.classList.remove('text-gray-500'); icon.classList.add('text-gold-400'); }
+                if (title) { title.classList.remove('text-gray-400'); title.classList.add('text-white'); }
+                
+                // Animation du contenu
+                if (roadmapContent) {
+                    animateTransition(roadmapContent, 'out');
+                    setTimeout(() => {
+                        animateTransition(roadmapContent, 'in');
+                    }, 300);
+                }
+                
+                currentRoadmapIndex = index;
+            });
+        });
+    }
+
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  2. ONGLETS PLAYBOOK (3 scénarios de décision)       ║
+    // ╚══════════════════════════════════════════════════════╝
+    const decisionsSection = document.querySelector('#decisions');
+    if (decisionsSection) {
+        const playbookButtons = decisionsSection.querySelectorAll('.flex.flex-wrap.justify-center.gap-3 button, .flex.flex-wrap.justify-center.gap-3 > button');
+        const playbookContent = decisionsSection.querySelector('.grid.md\\:grid-cols-2.gap-6');
+        
+        let currentPlaybookIndex = 0;
+        
+        playbookButtons.forEach((btn, index) => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (index === currentPlaybookIndex) return;
+                
+                // Mise à jour visuelle des boutons
+                playbookButtons.forEach(b => {
+                    b.classList.remove('bg-gradient-to-r', 'from-gold-500', 'to-gold-600', 'text-dark-900', 'shadow-lg', 'shadow-gold-500/25');
+                    b.classList.add('bg-dark-700/80', 'border', 'border-dark-600', 'text-gray-400');
+                });
+                
+                this.classList.remove('bg-dark-700/80', 'border', 'border-dark-600', 'text-gray-400');
+                this.classList.add('bg-gradient-to-r', 'from-gold-500', 'to-gold-600', 'text-dark-900', 'shadow-lg', 'shadow-gold-500/25');
+                
+                // Animation du contenu
+                if (playbookContent) {
+                    animateTransition(playbookContent, 'out');
+                    setTimeout(() => {
+                        animateTransition(playbookContent, 'in');
+                    }, 300);
+                }
+                
+                currentPlaybookIndex = index;
+            });
+        });
+        
+        // Activer le premier onglet par défaut
+        if (playbookButtons[0]) {
+            playbookButtons[0].classList.remove('bg-dark-700/80', 'border', 'border-dark-600', 'text-gray-400');
+            playbookButtons[0].classList.add('bg-gradient-to-r', 'from-gold-500', 'to-gold-600', 'text-dark-900', 'shadow-lg', 'shadow-gold-500/25');
+        }
+    }
+
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  3. FILTRES PORTFOLIO (Études de Cas)                ║
+    // ╚══════════════════════════════════════════════════════╝
+    const portfolioSection = document.querySelector('#etudes-de-cas');
+    if (portfolioSection) {
+        const filterButtons = portfolioSection.querySelectorAll('.flex.flex-wrap.justify-center.gap-2 button, .flex.flex-wrap.justify-center.gap-2 > button');
+        const portfolioGrid = portfolioSection.querySelector('.grid.md\\:grid-cols-2.lg\\:grid-cols-3');
+        const portfolioCards = portfolioGrid ? portfolioGrid.querySelectorAll(':scope > div > div') : [];
+        
+        // Mapping des filtres vers les catégories
+        const filterMap = {
+            'Tous': 'all',
+            'E-Commerce & Logique Métier': 'e-commerce',
+            'Pilotage & Transformation': 'pilotage',
+            'Web, Identité & Performance': 'web'
+        };
+        
+        // Mapping des projets vers leurs catégories (basé sur votre code source)
+        const projectCategories = {
+            'M-Morocco': 'e-commerce',
+            'South Cluster': 'pilotage',
+            'Massor Maroc': 'pilotage',
+            'Twily': 'pilotage',
+            'Moulay Driss': 'web',
+            'Feedback Branding': 'web',
+            'Sores Africa': 'web',
+            'Studio Aylal': 'e-commerce'
+        };
+        
+        let currentFilter = 'all';
+        
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const filterText = this.textContent.trim();
+                const filterId = filterMap[filterText] || 'all';
+                
+                if (filterId === currentFilter) return;
+                
+                // Mise à jour visuelle des boutons
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-gradient-to-r', 'from-gold-500', 'to-gold-600', 'text-dark-900');
+                    b.classList.add('bg-dark-700/80', 'border', 'border-dark-600', 'text-gray-400');
+                });
+                
+                this.classList.remove('bg-dark-700/80', 'border', 'border-dark-600', 'text-gray-400');
+                this.classList.add('bg-gradient-to-r', 'from-gold-500', 'to-gold-600', 'text-dark-900');
+                
+                // Filtrage des cartes avec animation
+                if (portfolioGrid) {
+                    const cards = portfolioGrid.children;
+                    Array.from(cards).forEach((card, index) => {
+                        const cardText = card.textContent;
+                        let shouldShow = filterId === 'all';
+                        
+                        if (!shouldShow) {
+                            for (const [project, category] of Object.entries(projectCategories)) {
+                                if (cardText.includes(project) && category === filterId) {
+                                    shouldShow = true;
+                                    break;
+                                }
+                            }
+                        }
+                        
+                        if (shouldShow) {
+                            card.style.display = '';
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                card.style.transition = 'all 0.3s ease';
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, index * 50);
+                        } else {
+                            card.style.transition = 'all 0.3s ease';
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                }
+                
+                currentFilter = filterId;
+            });
+        });
+        
+        // Activer "Tous" par défaut
+        if (filterButtons[0]) {
+            filterButtons[0].classList.remove('bg-dark-700/80', 'border', 'border-dark-600', 'text-gray-400');
+            filterButtons[0].classList.add('bg-gradient-to-r', 'from-gold-500', 'to-gold-600', 'text-dark-900');
+        }
+    }
+
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  4. MENU HAMBURGER MOBILE                            ║
+    // ╚══════════════════════════════════════════════════════╝
+    const mobileMenuButton = document.querySelector('button.lg\\:hidden, button[class*="lg:hidden"]');
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Trouver le menu mobile (frère suivant du header)
+            const header = this.closest('header');
+            const mobileMenu = header ? header.querySelector('.lg\\:hidden.glass, .lg\\:hidden[class*="glass"]') : null;
+            
+            if (mobileMenu) {
+                const isHidden = mobileMenu.style.display === 'none' || 
+                                getComputedStyle(mobileMenu).display === 'none' ||
+                                mobileMenu.offsetHeight === 0;
+                
+                if (isHidden) {
+                    mobileMenu.style.display = 'block';
+                    mobileMenu.style.overflow = 'hidden';
+                    mobileMenu.style.maxHeight = '0';
+                    mobileMenu.style.opacity = '0';
+                    requestAnimationFrame(() => {
+                        mobileMenu.style.transition = 'max-height 0.4s ease, opacity 0.3s ease';
+                        mobileMenu.style.maxHeight = '500px';
+                        mobileMenu.style.opacity = '1';
+                    });
+                } else {
+                    mobileMenu.style.transition = 'max-height 0.4s ease, opacity 0.3s ease';
+                    mobileMenu.style.maxHeight = '0';
+                    mobileMenu.style.opacity = '0';
+                    setTimeout(() => {
+                        mobileMenu.style.display = 'none';
+                    }, 400);
+                }
+                
+                // Changer l'icône (Menu ↔ X)
+                const svg = this.querySelector('svg');
+                if (svg) {
+                    // Détecter si c'est l'icône Menu (3 lignes) ou X (croix)
+                    const paths = svg.querySelectorAll('line, path');
+                    if (paths.length >= 3) {
+                        // C'est l'icône Menu, la remplacer par X
+                        this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>';
+                    } else {
+                        // C'est l'icône X, la remplacer par Menu
+                        this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>';
+                    }
+                }
+            }
+        });
+    }
+
+    // ╔══════════════════════════════════════════════════════╗
+    // ║  5. ANIMATIONS AU SCROLL (Intersection Observer)     ║
+    // ╚══════════════════════════════════════════════════════╝
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observer tous les éléments avec animation initiale
+    document.querySelectorAll('[style*="opacity: 0"], .glass').forEach(el => {
+        if (getComputedStyle(el).opacity === '0') {
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            scrollObserver.observe(el);
+        }
+    });
+
+});
+</script>
     <link rel="stylesheet" href="assets/index-DYUcu1cq.css">
     <style type="text/css" data-vite-dev-id="/workspace/src/index.css">/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
 @layer properties;
